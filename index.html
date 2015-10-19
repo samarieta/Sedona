@@ -6,6 +6,7 @@
 </head>
 <body>
   <header class="main-header">
+   <div class="container white">
     <nav class="main-navigation">
     <ul>
       <li class="active">
@@ -20,10 +21,12 @@
       <li>
         <a href="#">Гостиницы</a>
       </li>
+      </ul>
      </nav>
       <div class="mini-logo">
         <img src="#" alt="mini-logo">
       </div>
+    </div>
   </header>
   <div class="container">
       <div class="logo">
@@ -31,10 +34,11 @@
       </div>
    
     <section class="features-promo">
-      <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <p class="features-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон.</p>
     </section>
-      <section class="blue-features">
+     
+       <section class="blue-features">
        <div class="features-item">
         <div class="features-title">Настоящий городок</div>
       <p>-№1-</p>
@@ -87,9 +91,22 @@
       <p>Большинство едет в Гранд-каньон и толпится там</p>
       </div>
     </section>
+    <section class="features-promo">
+      <h1>Заинтересовались?</h1>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон.</p>
+    </section>
     </div>
-    
-  
+    <section class="form-content">
+    <div class="appointment-form">
+      <h2 class="features-title">Поиск гостиницы в Седоне</h2>
+    <form action="/echo" method="post">
+     <input type="date" name="date" placeholder="24 апреля 2014"> <!-- check name-->
+     <input type="date" name="date" placeholder="4 июля 2014"> <!-- check name-->
+     <input type="range" name="adult" value="" placeholder="2"> <!-- check name-->
+     <input type="range" name="child" value=""  placeholder="0"> <!-- check name-->
+      <button type="submit" class="btn">Найти</button>
+      
+      </form>
   <footer class="container">
     
   </footer>
