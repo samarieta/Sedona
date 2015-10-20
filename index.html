@@ -104,11 +104,16 @@
     <div class="appointment-form">
       <p class="features-title">Поиск гостиницы в Седоне</p>
     <form action="/echo" method="post">
-     <input type="date" name="date" placeholder="24 апреля 2014"> <!-- check name-->
-     <input type="date" name="date" placeholder="4 июля 2014"> <!-- check name-->
-     <input type="range" name="adult" value="" placeholder="2"> <!-- check name-->
-     <input type="range" name="child" value=""  placeholder="0"> <!-- check name-->
-      <button type="submit" class="btn feature-title">Найти</button>
+     <label>
+      Дата заезда<input type="date" name="date" placeholder="24 апреля 2014">
+      </label>
+    <label>Дата выезда<input type="date" name="date" placeholder="4 июля 2014"> 
+      </label>
+     <label>Взрослые<input type="number" name="adult" value="" placeholder="2"> 
+      </label>
+     <label>Дети<input type="number" name="child" value=""  placeholder="0"> 
+      </label>
+               <button type="submit" class="btn feature-title">Найти</button>
             </form>
       </div>
   <footer class="container">
@@ -122,7 +127,7 @@
         <a href="#" class="social-btn social-btn-tube">You Tube</a>
       </section>
       <section class="footer-copyright">
-        <p>WEBSITE BY</p>
+        <p>website by</p>
         <img src="#" alt="html academy">
       </section>
     </div>
