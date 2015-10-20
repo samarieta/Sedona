@@ -30,7 +30,46 @@
       </ul>
      </nav>
    </div>
-  
+  <div class="container">
+  <section class="choice form-container">
+   <div class="appointment-form">
+      <form action="/echo" method="post">
+      <label>Инфраструктура:
+     <input type="checkbox" id="infra-field" name="swimming"checked>
+            <label for="infra-field">Бассейн</label>
+      
+     <input type="checkbox" id="car-field" name="parking">
+            <label for="car-field">Паркинг</label>
+    <input type="checkbox" id="wifi-field" name="wifi">
+            <label for="wifi-field">Wi-Fi</label>
+        </label>
+           <label>
+           Тип жилья:
+           <input type="checkbox" id="hotel-field" name="hotel"checked>
+            <label for="hotel-field">Бассейн</label>
+      
+     <input type="checkbox" id="motel-field" name="motel"checked>
+            <label for="motel-field">Паркинг</label>
+    <input type="checkbox" id="flat-field" name="flat"checked>
+            <label for="flat-field">Wi-Fi</label>
+        </label>
+           <label>Стоимость в сутки
+            <table>
+                <tr>
+                    <td>
+                    <input type="text" placeholder="от 0">
+                    </td>
+                    <td>
+                  <input type="text" placeholder="до 3000">
+                    </td>
+                    <input type="range" name="range">
+            </label>
+    <button type="submit" class="btn">Показать</button>
+            </form>
+      </div>
+   
+    </section>
+  </div>
 </header> 
 
    
