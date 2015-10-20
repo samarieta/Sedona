@@ -7,7 +7,7 @@
 <body>
    <header class="main-header">
    
-   </header>
+   
    
    <div class="container clearfix">
    <nav class="main-navigation">
@@ -30,12 +30,13 @@
       </ul>
      </nav>
    </div>
+   </header>
   <div class="container">
   <section class="choice form-container">
    <div class="appointment-form">
       <form action="/echo" method="post">
       <label>Инфраструктура:
-     <input type="checkbox" id="infra-field" name="swimming"checked>
+     <input type="checkbox" id="infra-field"  name="swimming"checked>
             <label for="infra-field">Бассейн</label>
       
      <input type="checkbox" id="car-field" name="parking">
@@ -44,23 +45,27 @@
             <label for="wifi-field">Wi-Fi</label>
         </label>
            <label>
-           Тип жилья:
+           </form>
+            <form action="/echo" method="post">
+           <label>Тип жилья:
            <input type="checkbox" id="hotel-field" name="hotel"checked>
-            <label for="hotel-field">Бассейн</label>
+            <label for="hotel-field">Гостиница</label>
       
      <input type="checkbox" id="motel-field" name="motel"checked>
-            <label for="motel-field">Паркинг</label>
+            <label for="motel-field">Отель</label>
     <input type="checkbox" id="flat-field" name="flat"checked>
-            <label for="flat-field">Wi-Fi</label>
+            <label for="flat-field">Аппартаменты</label>
         </label>
-           <label>Стоимость в сутки
+        </form>
+         <form action="/echo" method="post">
+           <label for="money">Стоимость в сутки
             <table>
                 <tr>
                     <td>
-                    <input type="text" placeholder="от 0">
+                    <input type="text" id="money" placeholder="от 0">
                     </td>
                     <td>
-                  <input type="text" placeholder="до 3000">
+                  <input id="money" type="text" placeholder="до 3000">
                     </td>
                     <input type="range" name="range">
               </tr>
@@ -113,7 +118,7 @@
            <a href="#"class="btn">Рейтинг: 9.2</a>
             </div>
     </section>
-</header> 
+
 
    
     <footer class="main-footer">
