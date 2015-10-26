@@ -1,23 +1,24 @@
 body {
-font-size: 14px;
-font-weight: 400; /*how to find?*/
-font-family: "PT Sans Regular", "Arial", serif;
-color: #333333;
-line-height: 26px;
- }
+    font-size: 14px;
+    font-weight: 400;
+    /*how to find?*/
+    font-family: "PT Sans Regular", "Arial", serif;
+    color: #333333;
+    background-color: line-height: 26px;
+}
 
 .h1 {
-font-size: 21px;
-font-weight: 700; 
-font-family: "PT Sans", "Arial", serif;
-color: #000000;
-line-height: 26px;
+    font-size: 21px;
+    font-weight: 700;
+    font-family: "PT Sans", "Arial", serif;
+    color: #000000;
+    line-height: 26px;
 }
 
 a {
-font-size: 114px;
-font-weight: bold;
-font-family: "PT Sans Bold", "Arial", serif;
-color: #000000;
-line-height: 26px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "PT Sans Bold", "Arial", serif;
+    color: #000000;
+    line-height: 26px;
 }
