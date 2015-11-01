@@ -26,3 +26,80 @@ body {
     font-weight: 400;
     color: #000;
 }
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mini-logo {}
+
+.main-img {
+    width: 1200px;
+    min-height: 409px;
+    background-image: url(img/bg_mainphoto.jpg);
+}
+
+.features-promo {
+    min-height: 200px;
+    text-align: center;
+}
+
+.item1 {
+    float: left;
+    width: 450px;
+    min-height: 255px;
+    background-color: #81b3d2;
+}
+
+.item2 {}
+
+.home,
+.food,
+.souv {
+    float: left;
+    width: 350px;
+    min-height: 330px;
+}
+
+.souv {
+    margin-right: 20px;
+}
+
+.item3 {
+    float: right;
+    width: 450px;
+    min-height: 255px;
+    background-color: #81b3d2;
+}
+
+.features-promo2 {
+    min-height: 200px;
+    text-align: center;
+}
+
+.main-footer {
+    width: 1200px;
+}
+
+.footer-hashtag {
+    width: 135px;
+    float: left;
+    margin-left: 100px;
+}
+
+.footer-social {
+    width: 135px;
+    float: left;
+}
+
+.footer-copyright {
+    width: 200px;
+    float: right;
+}
