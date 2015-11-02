@@ -70,6 +70,11 @@ li {
     background-image: url('../img/top_logo.png')
 }
 
+.main-navigation a {
+    display: block;
+    padding: 30px 30px;
+}
+
 .main-img {
     width: 1200px;
     min-height: 510px;
@@ -159,6 +164,16 @@ li {
     min-height: 470px;
     background-image: url('../img/map.jpg')
 }
+
+.form-content {
+    position: absolute;
+    width: 565px;
+    height: 480px;
+    z-index: 100;
+}
+
+
+/*--z-index?--*/
 
 .main-footer {
     width: 1200px;
