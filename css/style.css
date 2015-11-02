@@ -5,27 +5,55 @@ body {
     color: #696969;
     background-color: #fff;
     line-height: 1.2em;
+    text-transform: uppercase;
 }
 
-.h1 {
+h1 {
     font-size: 30px;
     font-weight: 700;
     font-family: "PT Sans Bold", Arial, sans-serif;
     color: #000;
 }
 
-.features-item h3 {
+h2 {
     font-size: 21px;
-    font-weight: 400;
+    font-weight: 700;
     font-family: "PT Sans Bold", Arial, sans-serif;
-    color: #000;
+    color: #fff;
 }
 
 .features-item p {
     font-size: 14px;
     font-weight: 400;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 21px;
+    font-weight: 700;
+    font-family: "PT Sans Bold", Arial, sans-serif;
     color: #000;
 }
+
+.features-promo p {
+    color: #696969
+}
+
+.features p {
+    color: #858585
+}
+
+.feutures-promo2 p {
+    color: #d6d6d6
+}
+
+
+/*---почему не меняется на чёрный?--*/
 
 .clearfix:after {
     content: '';
@@ -50,6 +78,9 @@ body {
     min-height: 200px;
     text-align: center;
 }
+
+
+/*--blue block 1,3--*/
 
 .item1 {
     width: 1200px;
@@ -83,18 +114,30 @@ body {
     color: white;
 }
 
-.item2 {}
 
-.home,
-.food,
-.souv {
-    float: left;
-    width: 350px;
-    min-height: 330px;
+/*-- block 2,4--*/
+
+.item2 {
+    width: 1200px;
+    min-height: 325px;
+    background-color: white;
 }
 
-.souv {
-    margin-right: 20px;
+.features {
+    float: left;
+    width: 300px;
+    min-height: 325px;
+    text-align: center;
+    color: #000;
+    padding-right: 50px;
+    padding-left: 50px;
+    display: inline-block;
+}
+
+.item4 {
+    width: 1200px;
+    min-height: 250px;
+    background-color: #eee;
 }
 
 .features-promo2 {
