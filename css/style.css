@@ -72,8 +72,16 @@ li {
 
 .main-img {
     width: 1200px;
-    min-height: 409px;
+    min-height: 510px;
     background-image: url('../img/bg_mainphoto.jpg');
+}
+
+.welcome {
+    width: 1200px;
+    min-height: 409px;
+    background-image: url('../img/Welcome_text.png');
+    background-repeat: no-repeat;
+    background-position: 370px 55px;
 }
 
 .features-promo {
