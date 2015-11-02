@@ -30,7 +30,6 @@ h2 {
 p {
     font-size: 14px;
     font-weight: 400;
-    color: #ffffff;
 }
 
 h3 {
@@ -41,15 +40,11 @@ h3 {
 }
 
 .features-promo p {
-    color: #696969
+    color: #696969;
 }
 
 .features p {
-    color: #858585
-}
-
-.feutures-promo2 p {
-    color: #d6d6d6
+    color: #858585;
 }
 
 
@@ -144,12 +139,17 @@ li {
 .item4 {
     width: 1200px;
     min-height: 250px;
-    background-color: #eee;
 }
 
 .features-promo2 {
     min-height: 200px;
     text-align: center;
+}
+
+.map {
+    width: 1200px;
+    min-height: 470px;
+    background-image: url('../img/map.jpg')
 }
 
 .main-footer {
@@ -165,6 +165,7 @@ li {
 .footer-social {
     width: 135px;
     float: left;
+    margin-right: 170px;
 }
 
 .footer-copyright {
