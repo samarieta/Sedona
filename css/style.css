@@ -43,7 +43,7 @@ body {
 .main-img {
     width: 1200px;
     min-height: 409px;
-    background-image: url(img/bg_mainphoto.jpg);
+    background-image: url('../img/bg_mainphoto.jpg');
 }
 
 .features-promo {
@@ -52,10 +52,35 @@ body {
 }
 
 .item1 {
-    float: left;
-    width: 450px;
-    min-height: 255px;
+    width: 1200px;
+    min-height: 250px;
+    background-image: url('../img/bg_photo1.jpg');
+    background-position: right;
+}
+
+.features-item {
+    width: 400px;
     background-color: #81b3d2;
+    float: left;
+    min-height: 250px;
+    text-align: center;
+    color: white;
+}
+
+.item3 {
+    width: 1200px;
+    min-height: 250px;
+    background-image: url('../img/bg_photo2.jpg');
+    background-position: left;
+}
+
+.features-item3 {
+    width: 400px;
+    background-color: #81b3d2;
+    float: right;
+    min-height: 250px;
+    text-align: center;
+    color: white;
 }
 
 .item2 {}
@@ -70,13 +95,6 @@ body {
 
 .souv {
     margin-right: 20px;
-}
-
-.item3 {
-    float: right;
-    width: 450px;
-    min-height: 255px;
-    background-color: #81b3d2;
 }
 
 .features-promo2 {
