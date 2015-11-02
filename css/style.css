@@ -209,6 +209,9 @@ li {
     vertical-align: top;
 }
 
+
+/*--как опустить "рейтинг" вниз?-*/
+
 .column3 {
     float: right;
     width: 240px;
@@ -218,22 +221,25 @@ li {
     vertical-align: top;
 }
 
-
-}
 .main-footer {
     width: 1200px;
 }
+
 .footer-hashtag {
-    width: 135px;
+    width: 240px;
     float: left;
-    margin-left: 100px;
+    margin-left: 70px;
+    margin-right: 85px;
 }
+
 .footer-social {
-    width: 135px;
+    width: 400px;
     float: left;
-    margin-right: 170px;
+    margin-right: 85px;
 }
+
 .footer-copyright {
-    width: 200px;
+    width: 240px;
     float: right;
+    margin-right: 70px;
 }
