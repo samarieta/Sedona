@@ -112,8 +112,10 @@ h4 {
 }
 
 .features-promo {
-    min-height: 200px;
+    min-height: 90px;
     text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 
@@ -124,15 +126,16 @@ h4 {
     min-height: 250px;
     background-image: url('../img/bg_photo1.jpg');
     background-position: right;
+    background-repeat: no-repeat;
 }
 
 .features-item {
-    width: 400px;
     background-color: #81b3d2;
     float: left;
     min-height: 250px;
     text-align: center;
     color: white;
+    width: 35%
 }
 
 .item3 {
@@ -140,6 +143,7 @@ h4 {
     min-height: 250px;
     background-image: url('../img/bg_photo2.jpg');
     background-position: left;
+    background-repeat: no-repeat;
 }
 
 .features-item3 {
@@ -163,7 +167,6 @@ h4 {
 .features {
     float: left;
     width: 300px;
-    min-height: 325px;
     text-align: center;
     color: #000;
     padding-right: 50px;
@@ -284,4 +287,72 @@ h4 {
     width: 240px;
     float: right;
     margin-right: 70px;
+}
+
+.sprite {
+    background-image: url('../img/sprite/sprite.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-calendar {
+    width: 21px;
+    height: 22px;
+    background-position: -5px -5px;
+}
+
+.sprite-check {
+    width: 26px;
+    height: 22px;
+    background-position: -36px -5px;
+}
+
+.sprite-fb_png {
+    width: 10px;
+    height: 19px;
+    background-position: -72px -5px;
+}
+
+.sprite-food {
+    width: 74px;
+    height: 70px;
+    background-position: -92px -5px;
+}
+
+.icon {
+    position: relative;
+    top: 60px;
+    left: 110px;
+    display: block;
+    padding-bottom: 70px;
+}
+
+.sprite-home {
+    width: 75px;
+    height: 72px;
+    background-position: -5px -85px;
+}
+
+.sprite-logo_html {
+    width: 113px;
+    height: 39px;
+    background-position: -176px -5px;
+}
+
+.sprite-souv {
+    width: 64px;
+    height: 76px;
+    background-position: -176px -54px;
+}
+
+.sprite-tube_btn {
+    width: 20px;
+    height: 16px;
+    background-position: -5px -54px;
+}
+
+.sprite-twi_btn {
+    width: 17px;
+    height: 15px;
+    background-position: -35px -54px;
 }
