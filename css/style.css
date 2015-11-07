@@ -55,9 +55,6 @@ h4 {
     color: #858585;
 }
 
-
-/*---почему не меняется на чёрный?--*/
-
 .clearfix:after {
     content: '';
     display: table;
@@ -69,17 +66,34 @@ h4 {
     margin: 0 auto;
 }
 
-li {
+.nav1 li {
     float: left;
-    margin-right: 140px;
+    list-style: none;
+    width: 20%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.nav2 li {
+    float: right;
+    /*-нарушена очередность-*/
+    list-style: none;
+    width: 20%;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .minilogo {
-    background-image: url('../img/top_logo.png')
+    list-style-type: none;
+    min-height: 70px;
+    background-image: url('../img/top_logo.png');
+    background-repeat: no-repeat;
+    background-position: 30% 105%;
 }
 
 .main-navigation a {
     display: block;
+    list-style: none;
 }
 
 .main-img {
