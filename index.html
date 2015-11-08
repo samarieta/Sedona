@@ -106,42 +106,46 @@
         <section class="features-promo2">
             <h1>Заинтересовались?</h1>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне.</p>
+            <div class="block">
+                <h3>Поиск гостиницы в Седоне</h3>
+            </div>
         </section>
 
         <div class="map">
+            <section class="form-content">
+                <div class="appointment-form">
+
+                    <form action="/echo" method="post">
+                        <label>
+                            Дата заезда
+                            <input type="date" name="date" placeholder="24 апреля 2014">
+                        </label>
+                        <label>Дата выезда
+                            <input type="date" name="date" placeholder="4 июля 2014">
+                        </label>
+                        <label>Взрослые
+                            <span class="minus">
+                  </span>
+                            <input type="number" name="adult" value="1" placeholder="2">
+                            <span class="plus">
+                     </span>
+
+                        </label>
+                        <label>Дети
+                            <span class="minus">
+                   </span>
+                            <input type="number" name="child" value="0" placeholder="0">
+                            <span class="plus">
+                     </span>
+
+                        </label>
+                        <button type="submit" class="btn h3">Найти</button>
+                    </form>
+                </div>
+            </section>
         </div>
     </div>
-    <section class="form-content">
-        <div class="appointment-form">
-            <h3>Поиск гостиницы в Седоне</h3>
-            <form action="/echo" method="post">
-                <label>
-                    Дата заезда
-                    <input type="date" name="date" placeholder="24 апреля 2014">
-                </label>
-                <label>Дата выезда
-                    <input type="date" name="date" placeholder="4 июля 2014">
-                </label>
-                <label>Взрослые
-                    <span class="minus">
-                  </span>
-                    <input type="number" name="adult" value="1" placeholder="2">
-                    <span class="plus">
-                     </span>
 
-                </label>
-                <label>Дети
-                    <span class="minus">
-                   </span>
-                    <input type="number" name="child" value="0" placeholder="0">
-                    <span class="plus">
-                     </span>
-
-                </label>
-                <button type="submit" class="btn h3">Найти</button>
-            </form>
-        </div>
-    </section>
 
     <footer class="main-footer">
         <div class="container clearfix">
@@ -160,6 +164,7 @@
                 </a>
             </section>
         </div>
+
     </footer>
     <i class="sprite sprite-calendar"></i>
     <i class="sprite sprite-check"></i>
