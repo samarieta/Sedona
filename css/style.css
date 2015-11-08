@@ -1,3 +1,106 @@
+@font-face {
+    font-family: 'symbols-sedona';
+    src: url('../font/symbols-sedona.eot?60737633');
+    src: url('../font/symbols-sedona.eot?60737633#iefix') format('embedded-opentype'), url('../font/symbols-sedona.woff?60737633') format('woff'), url('../font/symbols-sedona.ttf?60737633') format('truetype'), url('../font/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+
+
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+
+
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'symbols-sedona';
+    src: url('../font/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "symbols-sedona";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-facebook:before {
+    content: '\66';
+    text-decoration: none;
+    color: white;
+    padding: 15px 15px;
+}
+
+.icon-twitter:before {
+    content: '\74';
+    text-decoration: none;
+    color: white;
+    padding: 15px 15px;
+}
+
+.icon-youtube:before {
+    content: '\f39e';
+    text-decoration: none;
+    color: white;
+    padding: 15px 15px;
+}
+
+.icon-up-dir:before {
+    content: '\25b2';
+}
+
+.icon-down-dir:before {
+    content: '\25bc';
+}
+
+.icon-star:before {
+    content: '\2605';
+}
+
+.icon-check-off:before {
+    content: '\2610';
+}
+
+.icon-check-on:before {
+    content: '\2611';
+}
+
+.icon-calendar:before {
+    content: '\e800';
+}
+
+.icon-plus:before {
+    content: '\e801';
+}
+
+.icon-minus:before {
+    content: '\e802';
+}
+
 body {
     font-size: 14px;
     font-weight: 400;
@@ -97,8 +200,6 @@ h4 {
     left: 530px;
     position: absolute;
 }
-
-/*-как подсвечивать не блок, а текст ссылки?-*/
 .main-navigation a {
     display: block;
     list-style: none;
@@ -286,40 +387,37 @@ h4 {
     width: 1200px;
 }
 .footer-hashtag {
-    width: 240px;
+    width: 33%;
     float: left;
     margin-left: 70px;
-    margin-right: 85px;
+    margin-top: 35px;
 }
 .footer-social {
-    width: 400px;
+    width: 33%;
     float: left;
-    margin-right: 85px;
+    margin-left: 70px;
 }
 .footer-copyright {
-    width: 240px;
+    /*--fail---*/
+    
+    width: 33%;
     float: right;
-    margin-right: 70px;
+    margin-top: 35px;
+}
+.social-btn {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    width: 45px;
+    height: 45px;
+    background-color: #81b3d2;
 }
 .sprite {
     background-image: url('../img/sprite/sprite.png');
     background-repeat: no-repeat;
     display: block;
-}
-.sprite-calendar {
-    width: 21px;
-    height: 22px;
-    background-position: -5px -5px;
-}
-.sprite-check {
-    width: 26px;
-    height: 22px;
-    background-position: -36px -5px;
-}
-.sprite-fb_png {
-    width: 10px;
-    height: 19px;
-    background-position: -72px -5px;
 }
 .sprite-food {
     width: 74px;
@@ -347,14 +445,4 @@ h4 {
     width: 64px;
     height: 76px;
     background-position: -176px -54px;
-}
-.sprite-tube_btn {
-    width: 20px;
-    height: 16px;
-    background-position: -5px -54px;
-}
-.sprite-twi_btn {
-    width: 17px;
-    height: 15px;
-    background-position: -35px -54px;
 }
