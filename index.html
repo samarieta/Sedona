@@ -6,7 +6,7 @@
     <title>Sedona</title>
     <link href="css/normalize.css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -51,7 +51,7 @@
 
         <section class="item1 clearfix">
             <div class="features-item">
-                <h2>Настоящий городок</h2>
+                <h2 class="blue-title">Настоящий городок</h2>
                 <p>-№1-</p>
                 <p>Cедона &nbsp;&mdash; не аттракцион для&nbsp;туристов, там течет своя жизнь</p>
             </div>
@@ -81,7 +81,7 @@
         </section>
         <section class="item3 clearfix">
             <div class="features-item3">
-                <h2>Там есть мост дьявола</h2>
+                <h2 class="blue-title">Там есть мост дьявола</h2>
                 <p>-№2-</p>
                 <p>Да, по нему можно&nbsp;пройти! Если конечно вы осмелитесь</p>
             </div>
@@ -116,14 +116,13 @@
                 <div class="appointment-form">
 
                     <form action="/echo" method="post">
-                        <label>
-                            Дата заезда
+                        <label class="label-appointment-form">Дата заезда
                             <input type="date" name="date" placeholder="24 апреля 2014">
                         </label>
-                        <label>Дата выезда
+                        <label class="label-appointment-form">Дата выезда
                             <input type="date" name="date" placeholder="4 июля 2014">
                         </label>
-                        <label>Взрослые
+                        <label class="label-appointment-form people">Взрослые
                             <span class="minus">
                   </span>
                             <input type="number" name="adult" value="1" placeholder="2">
@@ -131,7 +130,7 @@
                      </span>
 
                         </label>
-                        <label>Дети
+                        <label class="label-appointment-form people">Дети
                             <span class="minus">
                    </span>
                             <input type="number" name="child" value="0" placeholder="0">
@@ -139,7 +138,8 @@
                      </span>
 
                         </label>
-                        <button type="submit" class="btn h3">Найти</button>
+                        <button type="submit" class="btn btn-search">
+                            Найти</button>
                     </form>
                 </div>
             </section>
