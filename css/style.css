@@ -294,7 +294,6 @@ h4 {
     float: right;
     padding-top: 0px;
     margin-top: -8px;
-    outline: 1px solid;
 }
 
 .dir a:hover {
@@ -805,7 +804,6 @@ input[type="date"] {
     margin-top: 5px;
     margin-bottom: 30px;
     vertical-align: top;
-    outline: 1px solid;
 }
 
 .column2 {
@@ -813,7 +811,6 @@ input[type="date"] {
     width: 33%;
     margin-top: 8px;
     vertical-align: top;
-    outline: 1px solid;
 }
 
 .column3 {
@@ -822,7 +819,6 @@ input[type="date"] {
     margin-top: -8px;
     margin-right: 12px;
     vertical-align: top;
-    outline: 1px solid;
 }
 
 .column2 h3 {
@@ -845,7 +841,6 @@ input[type="date"] {
     display: block;
     margin-top: 80px;
     margin-left: -14px;
-    outline: 1px solid;
 }
 
 .block {
@@ -903,14 +898,12 @@ input[type="date"] {
     padding-top: 4px;
     color: #6f6f6f;
     border-radius: 2px;
-    outline: 1px solid;
 }
 
 .stars {
     float: right;
     margin-top: 10px;
     margin-right: 60px;
-    outline: 1px solid;
 }
 
 .btn-detail {
