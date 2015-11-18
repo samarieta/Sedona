@@ -76,21 +76,20 @@
     content: '\25b2';
     color: #ccc;
     font-size: 20px;
-    position: relative;
-    top: -51px;
-    left: 1015px;
+    padding-right: 66px;
 }
 
 .icon-down-dir:before {
     content: '\25bc';
     font-size: 20px;
-    position: relative;
-    top: -51px;
-    left: 1010px;
+    width: 9px;
+    height: 9px;
 }
 
 .icon-star:before {
     content: '\2605';
+    margin: 0;
+    padding: 0;
     font-size: 20px;
     color: #81b3d2;
 }
@@ -164,9 +163,11 @@ body {
     background-color: #f2f2f2;
 }
 
-body .container {
-    box-shadow: 5px 0 20px 0px rgba(0, 0, 0, 0.2), -5px 0px 20px 0px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 5px 0 20px 0px rgba(0, 0, 0, 0.2), -5px 0px 20px 0px rgba(0, 0, 0, 0.2);
+body .layout-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: -2px 1px 15px 1px rgba(0, 0, 0, 0.2);
 }
 
 header {
@@ -252,7 +253,6 @@ h4 {
 .container {
     width: 1200px;
     margin: 0 auto;
-    outline: 1px solid;
 }
 
 .main-navigation ul {
@@ -288,6 +288,13 @@ h4 {
 
 .main-navigation a:hover {
     color: #81b3d2;
+}
+
+.dir {
+    float: right;
+    padding-top: 0px;
+    margin-top: -8px;
+    outline: 1px solid;
 }
 
 .dir a:hover {
@@ -464,6 +471,7 @@ h4 {
     width: 565px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 75px;
     min-height: 395px;
     background-color: white;
 }
@@ -491,10 +499,16 @@ input[type="date"] {
     box-sizing: border-box;
     width: 345px;
     min-height: 35px;
+    padding-left: 15px;
     margin-bottom: 30px;
     margin-left: 16px;
-    border: 0;
     background-color: #f2f2f2;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "PT Sans", Arial, sans-serif;
+    text-transform: uppercase;
+    color: black;
+    border: 0;
 }
 
 .choice {
@@ -510,6 +524,10 @@ input[type="date"] {
     text-align: center;
     border: none;
     background-color: #f2f2f2;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "PT Sans", Arial, sans-serif;
+    color: black;
 }
 
 .adult {
@@ -614,7 +632,7 @@ input[type="date"] {
     margin-top: 20px;
     margin-bottom: 0px;
     margin-right: -5px;
-    padding-right: 32px;
+    padding-right: 36px;
 }
 
 .range {
@@ -635,7 +653,9 @@ input[type="date"] {
 .price {
     display: block;
     float: left;
-    width: 49%;
+    width: auto;
+    padding-top: 5px;
+    padding-left: 64px;
     font-size: 14px;
     text-align: center;
     border-right-width: 1px;
@@ -745,7 +765,7 @@ input[type="date"] {
 
 .sorting .point {
     color: #b1b1b1;
-    border-bottom: 1px dashed;
+    border-bottom: 1px dotted;
     border-bottom-color: #81b3d2;
 }
 
@@ -765,6 +785,7 @@ input[type="date"] {
 
 .result-search {
     background-color: #fff;
+    padding-top: 20px;
 }
 
 .result {
@@ -773,30 +794,35 @@ input[type="date"] {
     border-bottom: 1px solid #e5e5e5;
 }
 
+.result:last-child {
+    margin-bottom: 0px;
+}
+
 .column1 {
     float: left;
     margin-right: 30px;
     margin-left: 73px;
-    margin-top: 11px;
+    margin-top: 5px;
     margin-bottom: 30px;
     vertical-align: top;
+    outline: 1px solid;
 }
 
 .column2 {
     float: left;
     width: 33%;
-    margin-bottom: 10px;
-    margin-top: 11px;
+    margin-top: 8px;
     vertical-align: top;
+    outline: 1px solid;
 }
 
 .column3 {
     float: right;
     width: 13%;
-    margin-bottom: 10px;
-    margin-top: -15px;
+    margin-top: -8px;
     margin-right: 12px;
     vertical-align: top;
+    outline: 1px solid;
 }
 
 .column2 h3 {
@@ -817,8 +843,9 @@ input[type="date"] {
 
 .rate {
     display: block;
-    margin-top: 52px;
+    margin-top: 80px;
     margin-left: -14px;
+    outline: 1px solid;
 }
 
 .block {
@@ -856,6 +883,7 @@ input[type="date"] {
     text-align: center;
     text-transform: uppercase;
     color: #fff;
+    border: none;
 }
 
 .btn-book {
@@ -879,7 +907,9 @@ input[type="date"] {
 }
 
 .stars {
-    margin-top: 17px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 60px;
     outline: 1px solid;
 }
 
@@ -899,8 +929,11 @@ input[type="date"] {
 }
 
 .main-footer {
-    width: 1200px;
     background-color: white;
+}
+
+.opacity {
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-hashtag {
