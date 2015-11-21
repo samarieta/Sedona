@@ -76,14 +76,12 @@
     content: '\25b2';
     color: #ccc;
     font-size: 20px;
-    padding-right: 66px;
 }
 
 .icon-down-dir:before {
     content: '\25bc';
+    color: #81b3d2;
     font-size: 20px;
-    width: 9px;
-    height: 9px;
 }
 
 .icon-star:before {
@@ -102,18 +100,6 @@
 .icon-check-on:before {
     content: '\2611';
     font-size: 20px;
-}
-
-.check-on {
-    position: relative;
-    top: 27px;
-    left: 2px;
-}
-
-.check-off {
-    position: relative;
-    top: 27px;
-    left: 2px;
 }
 
 .icon-calendar:before {
@@ -163,11 +149,11 @@ body {
     background-color: #f2f2f2;
 }
 
-body .layout-wrapper {
-    max-width: 1200px;
+.layout-wrapper {
+    width: 1200px;
     margin: 0 auto;
     background-color: white;
-    box-shadow: -2px 1px 15px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
 }
 
 header {
@@ -210,9 +196,9 @@ h3 {
 }
 
 h4 {
-    margin-top: -5px;
-    margin-bottom: 0px;
-    padding-left: 2px;
+    margin-top: -4px;
+    margin-bottom: 2px;
+    padding-left: 0px;
     font-size: 16px;
     font-weight: bold;
     line-height: 21px;
@@ -226,6 +212,14 @@ h4 {
     color: #696969;
 }
 
+.features p {
+    display: block;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin: 10px;
+    color: #858585;
+}
+
 .features-promo h3 {
     padding-top: 59px;
     padding-bottom: 30px;
@@ -237,9 +231,8 @@ h4 {
     margin-top: -2px;
 }
 
-.features p {
-    margin: 10px;
-    color: #858585;
+.souvenir {
+    width: 75%;
 }
 
 .clearfix:after {
@@ -273,9 +266,8 @@ h4 {
 }
 
 .minilogo {
-    position: absolute;
-    left: 50%;
-    margin-left: -72px;
+    position: relative;
+    left: 4%;
 }
 
 .main-navigation a {
@@ -293,11 +285,13 @@ h4 {
 .dir {
     float: right;
     padding-top: 0px;
-    margin-top: -8px;
+    padding-right: 5px;
+    margin-top: -57px;
+    margin-right: 54px;
 }
 
 .dir a:hover {
-    color: #81b3d2
+    color: black;
 }
 
 .nav-left {
@@ -317,6 +311,7 @@ h4 {
 .main-img {
     width: 1200px;
     min-height: 510px;
+    margin-top: -38px;
     background-image: url('../img/bg_mainphoto.jpg');
     background-repeat: no-repeat;
     background-position: 0 20%;
@@ -355,7 +350,6 @@ h4 {
 }
 
 .item1 .features-item {
-    display: block;
     float: left;
     width: 33%;
     height: inherit;
@@ -365,7 +359,6 @@ h4 {
 }
 
 .item3 .features-item {
-    display: block;
     float: right;
     width: 33%;
     height: inherit;
@@ -392,23 +385,41 @@ h4 {
     background-repeat: no-repeat;
 }
 
-.text h2 {
-    padding-top: 32px;
-    padding-left: 90px;
-    padding-right: 90px;
+.text1 h2 {
+    margin-left: 103px;
+    margin-right: 102px;
+    margin-top: 50px;
 }
 
 .text p {
     margin: 0;
-    padding: 0;
-    padding-left: 42px;
     padding-right: 42px;
+    margin-left: 30px;
     line-height: 21px;
+}
+
+.text1 p {
+    margin-left: 47px;
+    margin-right: 55px;
+    margin-bottom: 20px;
+    padding-left: 9px;
+}
+
+.bridge {
+    padding-left: 53px;
 }
 
 .text .number {
     margin-bottom: 25px;
     margin-top: 16px;
+    padding-left: 10px;
+}
+
+.text h3 {
+    padding-top: 5px;
+    margin-right: 139px;
+    margin-left: 126px;
+    margin-top: 45px;
 }
 
 
@@ -421,10 +432,9 @@ h4 {
 }
 
 .features {
-    display: block;
     float: left;
     width: 30%;
-    margin-right: 40px;
+    margin-right: 42px;
     margin-bottom: 50px;
     font-size: 14px;
     vertical-align: middle;
@@ -452,8 +462,8 @@ h4 {
 }
 
 .features-promo2 p {
-    padding-left: 350px;
-    padding-right: 350px;
+    padding-left: 371px;
+    padding-right: 363px;
 }
 
 .features-promo2 h1 {
@@ -463,7 +473,7 @@ h4 {
 
 .map {
     min-height: 470px;
-    background-image: url('../img/map.jpg')
+    background-image: url('../img/map.jpg');
 }
 
 .form-content {
@@ -476,7 +486,6 @@ h4 {
 }
 
 .label-appointment-form {
-    display: block;
     float: left;
     height: 38px;
     width: 95px;
@@ -494,7 +503,7 @@ h4 {
     padding-left: 56px;
 }
 
-input[type="date"] {
+.date input {
     box-sizing: border-box;
     width: 345px;
     min-height: 35px;
@@ -511,12 +520,10 @@ input[type="date"] {
 }
 
 .choice {
-    display: block;
     float: left;
 }
 
 .people {
-    display: block;
     float: left;
     width: 112px;
     height: 38px;
@@ -565,6 +572,7 @@ input[type="date"] {
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: -38px;
     color: white;
     background-image: url('../img/bg_photo_filter.jpg');
     background-repeat: no-repeat;
@@ -574,58 +582,58 @@ input[type="date"] {
 
 /*--second form--*/
 
-.form-container .form1,
-.form-container .form2 {
-    float: left;
-}
-
-.form1 {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-    padding-left: 53px;
-    position: relative;
-}
-
-.form2 {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 27px;
-    margin-right: 0px;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 75px;
-    padding-right: 40px;
-}
-
-.form1 label,
-.form2 label {
-    display: block;
-    padding-right: 40px;
-    position: relative;
-    margin-top: 6px;
-    margin-bottom: 0px;
-    margin-left: 42px;
-    margin-right: 8px;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    cursor: pointer;
-}
-
-.form1 input,
-.form2 input {
+.form1 input {
     display: none;
 }
 
-.form3 {
+.form1 {
+    float: left;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 55px;
+    margin-right: 55px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0px;
+}
+
+.form1 label {
     display: block;
+    padding-right: 40px;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-left: 2px;
+    margin-right: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+
+/*
+input [type="checkbox"] {
+    display: none;
+}
+*/
+
+.form1 label::before {
+    content: '\2610';
+    display: inline-block;
+    margin-right: 25px;
+    vertical-align: bottom;
+    font-size: 20px;
+}
+
+input[type="checkbox"]:checked + label::before {
+    content: '\2611';
+    font-size: 20px;
+}
+
+.form3 {
     float: right;
     width: 352px;
     margin-top: 20px;
@@ -650,7 +658,6 @@ input[type="date"] {
 }
 
 .price {
-    display: block;
     float: left;
     width: auto;
     padding-top: 5px;
@@ -768,6 +775,10 @@ input[type="date"] {
     border-bottom-color: #81b3d2;
 }
 
+.sorting .point:hover {
+    color: #81b3d2;
+}
+
 .btn-result {
     display: block;
     width: 135px;
@@ -827,13 +838,11 @@ input[type="date"] {
 }
 
 .detail {
-    display: block;
     float: left;
     margin-right: 7px;
 }
 
 .booking {
-    display: block;
     float: left;
 }
 
