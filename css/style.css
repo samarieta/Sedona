@@ -304,14 +304,14 @@ h4 {
     width: 1200px;
     min-height: 510px;
     margin-top: -38px;
-    background-image: #ccc url('../img/bg_mainphoto.jpg');
+    background-image: url('../img/bg_mainphoto.jpg');
     background-repeat: no-repeat;
     background-position: 0 20%;
 }
 
 .welcome {
     min-height: 459px;
-    background-image: #ccc url('../img/Welcome_text.png');
+    background-image: url('../img/Welcome_text.png');
     background-repeat: no-repeat;
     background-position: 50% 79px;
 }
@@ -363,7 +363,7 @@ h4 {
     float: right;
     width: 66%;
     height: 256px;
-    background-image: #ccc url('../img/bg_photo1.jpg');
+    background-image: url('../img/bg_photo1.jpg');
     background-position: right;
     background-repeat: no-repeat;
 }
@@ -372,7 +372,7 @@ h4 {
     float: left;
     width: 66%;
     height: 256px;
-    background-image: #ccc url('../img/bg_photo2.jpg');
+    background-image: url('../img/bg_photo2.jpg');
     background-position: left;
     background-repeat: no-repeat;
 }
@@ -465,7 +465,7 @@ h4 {
 
 .map {
     min-height: 470px;
-    background-image: #ccc url('../img/map.jpg');
+    background-image: url('../img/map.jpg');
 }
 
 .form-content {
@@ -988,7 +988,7 @@ input[type="checkbox"]:checked + label::before {
 
 .sprite {
     display: block;
-    background-image: #ccc url('../img/sprite.png');
+    background-image: url('../img/sprite.png');
     background-repeat: no-repeat;
     background-position: center;
 }
