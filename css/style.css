@@ -50,7 +50,8 @@
 
 .icon-facebook:before {
     content: '\66';
-    padding-top: 14px;
+    position: relative;
+    top: 14px;
     font-size: 20px;
     text-decoration: none;
     color: white;
@@ -58,7 +59,8 @@
 
 .icon-twitter:before {
     content: '\74';
-    padding-top: 14px;
+    position: relative;
+    top: 14px;
     font-size: 20px;
     text-decoration: none;
     color: white;
@@ -66,7 +68,8 @@
 
 .icon-youtube:before {
     content: '\f39e';
-    padding-top: 14px;
+    position: relative;
+    top: 14px;
     font-size: 20px;
     text-decoration: none;
     color: white;
@@ -80,7 +83,7 @@
 
 .icon-down-dir:before {
     content: '\25bc';
-    color: #81b3d2;
+    color: #ccc;
     font-size: 20px;
 }
 
@@ -95,11 +98,17 @@
 .icon-check-off:before {
     content: '\2610';
     font-size: 20px;
+    color: #b5b5b5;
+}
+
+.icon-check-off:hover::before {
+    color: #fff;
 }
 
 .icon-check-on:before {
     content: '\2611';
     font-size: 20px;
+    color: #b5b5b5;
 }
 
 .icon-calendar:before {
@@ -307,6 +316,7 @@ h4 {
     background-image: url('../img/bg_mainphoto.jpg');
     background-repeat: no-repeat;
     background-position: 0 20%;
+    background-color: aliceblue;
 }
 
 .welcome {
@@ -475,6 +485,12 @@ h4 {
     margin-bottom: 75px;
     min-height: 395px;
     background-color: white;
+    opacity: 0;
+    transition: .5s;
+}
+
+.form-content.is-open {
+    opacity: 1;
 }
 
 .label-appointment-form {
@@ -569,6 +585,7 @@ h4 {
     background-image: url('../img/bg_photo_filter.jpg');
     background-repeat: no-repeat;
     background-position: 50% -55px;
+    background-color: aliceblue;
 }
 
 
@@ -736,6 +753,7 @@ input[type="checkbox"]:checked + label::before {
     margin-top: 33px;
     margin-right: 32px;
     text-align: center;
+    vertical-align: middle;
     font-size: 12px;
 }
 
@@ -752,12 +770,24 @@ input[type="checkbox"]:checked + label::before {
     color: black;
 }
 
-.sorting .active {
+.sorting .sort-type:active {
+    border-bottom: none;
+    color: black;
+}
+
+.sorting .active2 {
+    border-bottom: none;
     color: #81b3d2;
 }
 
-.sorting .point:hover {
+.sorting .sort-type:hover {
     color: #81b3d2;
+}
+
+.sorting .sort-type {
+    color: #b1b1b1;
+    border-bottom: 1px dotted;
+    border-bottom-color: #81b3d2;
 }
 
 .main-navigation a:hover {
@@ -765,24 +795,149 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .main-navigation a:active {
-    color: #766357;
+    color: #b2b2b2;
+}
+
+.main-navigation .active {
+    color: #b6aca5;
+}
+
+.main-navigation .active:hover {
+    color: #604e43;
+}
+
+.main-navigation .active:active {
+    color: #d6d0cc;
+}
+
+.icon-up-dir:hover::before,
+.icon-down-dir:hover::before {
+    color: #000;
+}
+
+.icon-up-dir:active::before,
+.icon-down-dir:active::before {
+    color: #81b3d2;
+}
+
+.active.icon-down-dir:before {
+    color: #81b3d2;
+}
+
+.icon-minus:hover::before,
+.icon-plus:hover::before {
+    color: black;
+}
+
+.icon-minus:active::before,
+.icon-plus:active::before {
+    color: #81b3d2;
 }
 
 .circle:hover {
     background-color: #3b6791;
 }
 
-.sorting .point {
-    color: #b1b1b1;
-    border-bottom: 1px dotted;
-    border-bottom-color: #81b3d2;
+.btn-detail:hover {
+    background-color: #669ec0;
+}
+
+.btn-detail:active {
+    color: #88b6d1;
+}
+
+.btn-book:hover {
+    background-color: #604e43;
+}
+
+.btn-book:active {
+    color: 766860;
+}
+
+.column2 h3:hover {
+    color: #81b3d2;
+}
+
+.column2 h3:active {
+    color: #b2b2b2;
+}
+
+.icon-calendar:hover::before {
+    color: black;
+}
+
+.icon-calendar:active::before {
+    color: #a3c7de;
+}
+
+.btn-search:hover,
+.social-btn:hover {
+    background-color: #669ec0;
+}
+
+.btn-search:active {
+    background-color: #5496bd;
+    color: #88b6d1;
+}
+
+.icon-twitter:active::before {
+    opacity: 0.8;
+    background-color: #88b6d1;
+}
+
+.icon-facebook:active::before {
+    opacity: 0.8;
+    background-color: #88b6d1;
+}
+
+.icon-youtube:active::before {
+    opacity: 0.8;
+    background-color: #88b6d1;
+}
+
+input[type=checkbox]:checked + label:before {
+    color: #b5b5b5;
+}
+
+input[type=checkbox]+ label:before {
+    color: #b5b5b5;
+}
+
+input[type=checkbox]:hover:checked + label:before {
+    color: #fff;
+}
+
+input[type=checkbox]:hover + label:before {
+    color: #fff;
+}
+
+input[type=checkbox]:hover:disabled + label:before {
+    color: #6a6a6a;
+}
+
+input[type=checkbox]:disabled + label:before {
+    color: #6a6a6a;
+}
+
+input[type=text]:hover {
+    background-color: #ebebeb;
+}
+
+input[type=text]:active {
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+}
+
+.logohtml:active {
+    opacity: 0.7;
+    color: #88b6d1;
 }
 
 .btn-result {
     display: block;
     width: 135px;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     margin-left: 99px;
     padding: 9px;
     text-align: center;
@@ -856,15 +1011,16 @@ input[type="checkbox"]:checked + label::before {
     min-height: 85px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 38px;
     background-color: #766357;
-}
-
-.block h3 {
-    color: white;
-    padding-top: 30px;
-    padding-left: 110px;
-    padding-right: 110px;
+    font-size: 21px;
+    font-weight: 700;
+    font-family: "PT Sans", Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 21px;
+    border: none;
 }
 
 .btn {
@@ -966,12 +1122,14 @@ input[type="checkbox"]:checked + label::before {
     height: 45px;
     margin-right: -5px;
     margin-left: 7px;
+    vertical-align: top;
     background-color: #81b3d2;
 }
 
 .by {
     display: inline-block;
     margin-left: -122px;
+    vertical-align: top;
 }
 
 .logohtml {
@@ -984,6 +1142,7 @@ input[type="checkbox"]:checked + label::before {
 .hashtag {
     display: inline-block;
     margin-top: 0px;
+    vertical-align: top;
 }
 
 .sprite {

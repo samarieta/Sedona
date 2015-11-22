@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Sedona</title>
     <link href="css/normalize.css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
 </head>
 
@@ -43,9 +43,9 @@
                     <div class="form1">
                         <h4 class="form-title">Инфраструктура:</h4>
 
-                        <input type="checkbox" id="infra-field" name="swimming" checked>
+                        <input type="checkbox" id="infra-field" name="swimming" checked disabled>
                         <label class="field" for="infra-field">Бассейн</label>
-                        <input type="checkbox" id="car-field" name="parking">
+                        <input type="checkbox" id="car-field" name="parking" disabled>
                         <label class="field" for="car-field">Парковка</label>
                         <input type="checkbox" id="wifi-field" name="wifi">
                         <label class="field" for="wifi-field">Wi-Fi</label>
@@ -90,14 +90,14 @@
                     <li>
                         <h3>Найдено: 3</h3></li>
                     <li><a href="#" class="sort">Сортировка:</a></li>
-                    <li><a href="#" class="active">По цене</a></li>
-                    <li><a href="#" class="point">По типу</a></li>
-                    <li><a href="#" class="point">По рейтингу</a></li>
+                    <li><a href="#" class=".sort-type active2">По цене</a></li>
+                    <li><a href="#" class="sort-type">По типу</a></li>
+                    <li><a href="#" class="sort-type">По рейтингу</a></li>
                 </ul>
                 <div class="dir">
-                    <a href="#"><i class="icon-up-dir"></i></a>
+                    <a href="#" class="icon-up-dir"></a>
 
-                    <a href="#"><i class="icon-down-dir"></i></a>
+                    <a href="#" class="icon-down-dir active"></a>
                 </div>
 
             </div>
@@ -163,7 +163,7 @@
                         <img src="img/hotel3.jpg" alt="diablo" width="135" height="90">
                     </div>
                     <div class="column2 clearfix">
-                        <h3>Villas Poco Diablo</h3>
+                        <h3>Villas At Poco Diablo</h3>
                         <div class="detail">
                             <p>Апартаменты</p>
                             <a href="#" class="btn-detail">Подробнее</a>
